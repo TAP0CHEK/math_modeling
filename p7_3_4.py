@@ -15,11 +15,11 @@ ax.set_ylim(-edge, edge)
 x, y = [], []
  
 def animate(frame):
-    t = frame
+    t = np.arange(-10, 10, 0.01)
   
-    xn = (np.sin(t)**3)*16
+    xn = 12*np.cos(t)+8*np.cos(1.5*t)
 
-    yn = 13*np.cos(t)-5*np.cos(2*t)-2*np.cos(3*t)-np.cos(4*t)
+    yn = 12*np.sin(t)-8*np.sin(1.5*t)
  
     x.append(xn)
     y.append(yn)
