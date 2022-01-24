@@ -10,8 +10,8 @@ print('Длина пройденного пути:',(L))
 
 
 fig, ax = plt.subplots()
-line, = plt.plot([], [], '-', color='blue', label='line')
-edge = 2000
+line, = plt.plot([], [], '-', color='black', label='line')
+edge = 2
 
 plt.axis('equal')
  
@@ -37,7 +37,7 @@ def animate(frame):
 
     cn = np.sin(t)
     dn = np.cos(t)
-    plt.plot((0, cn), (0, dn))
+    plt.plot((0, cn), (0, dn), color='red')
  
 ani = animation.FuncAnimation(fig,
                         animate,
